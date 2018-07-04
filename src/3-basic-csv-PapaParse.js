@@ -34,10 +34,6 @@ fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
 
 
 
-
-
-
-
 // var lineReader = lineReader.createInterface({
 //     input: fs.createReadStream(filePath)
 // });

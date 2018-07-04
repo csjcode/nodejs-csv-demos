@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/csjcode/nodejs-csv-demos#readme",
   "dependencies": {
-    "papaparse": "^4.5.0"
+    "papaparse": "^4.5.0",
+    "request": "^2.87.0",
+    "scramjet": "^4.16.1"
   }
 }
