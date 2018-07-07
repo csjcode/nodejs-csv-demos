@@ -7,7 +7,7 @@ const displayData = row => console.log(`This row is displayed by displayData: ${
 
 const url = 'https://g1.freshpatents.com/MOCK_DATA.csv';
 
-const getCSV = url => { 
+const getCSV = (urlTitle,url) => { 
 	request.get(url, function (error, response, body) {
     	if (!error && response.statusCode == 200) {
 		  var data = body;
@@ -15,6 +15,7 @@ const getCSV = url => {
 			step: function(row) {
 				//  console.log("Row:", row.data);
 				displayData(row.data);
+				console.log(urlTitle);
 
 			},
 			complete: function(results) {
@@ -22,12 +23,12 @@ const getCSV = url => {
 				 console.log('Success!')
 			}
 	  	});
-        // Continue with your processing here.
+        // Continue processing here.
 		}
 	});
 }
 
 
-getCSV(url);
+getCSV('This is a new URL to PARSE',url);
 
 
